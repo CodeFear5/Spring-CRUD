@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2 class="mb-4 text-primary">Student Form</h2>
+        <form th:action="@{/save}" method="post">
+            <input type="hidden" name="id" th:value="${student.id}" />
+
+            <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input type="text" name="name" class="form-control" th:value="${student.name}" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <input type="email" name="email" class="form-control" th:value="${student.email}" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Course:</label>
+                <input type="text" name="course" class="form-control" th:value="${student.course}" required />
+            </div>
+
+            <button type="submit" class="btn btn-success">Save Student</button>
+            <a th:href="@{/getUsers}" class="btn btn-secondary ms-2">Back to List</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
