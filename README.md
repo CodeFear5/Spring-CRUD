@@ -4,24 +4,25 @@ This is a Spring Boot-based **Student Management** application. Follow the steps
 
 ## Steps to Run Locally in Eclipse
 
-### 1. Clone the Repository
+
+
+
+DATABASE CONNECTION
+IN MYSQL 
+CREATE A DATABASE CALLED studnetdb;
+USE studnetdb;
+
+IN THE APPLICATION.PROPERTIES FILES
+UPDATE YOUR DATABASE PASSWORD AND USERNAME
+### . Clone the Repository
 
 First, clone the repository to your local machine by running the following command in your terminal or command prompt:
 
-```bash
-git clone https://github.com/yourusername/student-management.git
-Navigate to the project folder:
+ 
+git clone https://github.com/CodeFear5/Spring-CRUD.git\
 
-bash
-Copy
-Edit
-cd student-management
-2. Open the Project in Eclipse
-Open Eclipse IDE.
-
-Go to File > Import > Existing Maven Projects (if it's a Maven project).
-
-Select the root directory where the cloned project is located and click Finish.
+1. Open the Project in Eclipse
+2. Navigate to the project folder:
 
 3. Run the Application
 Right-click on the project in the Project Explorer in Eclipse.
@@ -29,10 +30,9 @@ Right-click on the project in the Project Explorer in Eclipse.
 Select Run As > Spring Boot App.
 
 4. Access the Application in Your Browser
-Once the application is running, open your browser and go to:
-
-bash
-Copy
-Edit
+Once the application is running, open your browser and go to
 http://localhost:8080
 You should now see the Student Management application running locally. You can add, edit, and delete student records.
+
+
+
