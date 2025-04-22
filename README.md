@@ -19,7 +19,7 @@ UPDATE YOUR DATABASE PASSWORD AND USERNAME
 First, clone the repository to your local machine by running the following command in your terminal or command prompt:
 
  
-git clone https://github.com/CodeFear5/Spring-CRUD.git\
+git clone https://github.com/CodeFear5/Spring-CRUD
 
 1. Open the Project in Eclipse
 2. Navigate to the project folder:
